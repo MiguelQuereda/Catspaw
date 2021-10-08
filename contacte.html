@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <meta name="description" content="Cat's paw, tu tienda de cojines y almohadas para toda tu familia, aptos para 2 y 4 patas.">
+    </head>
+    <body>
+        <header>
+            <ul class="navbar">
+                <li class="nav"><a href="index.html" class="menuitem">Inicio</a></li>
+                <li class="nav"><a href="#" class="menuitem">Conócenos</a></li>
+                <li class="nav"><a href="serveis.html" class="menuitem">Servicios</a></li>
+                <li class="nav"><a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png" alt="wwt"></a></li>
+                <li class="nav"><a href="contacte.html" class="menuitem">Contacto</a></li>
+                <li class="nav"><a href="blog.html" class="menuitem">Blog</a></li>
+            </ul>
+        </header> 
+    <form>
+        <fieldset>
+
+            <legend>Datos personales</legend>
+            <div class="datos personales">
+            <label>Nombre y apellidos: </label>
+            <input name="nombre" type="text" pattern="[a-zA-Z]{1,30}" required = "true" placeholder="Francisco Franco" autofocus="true" /><br><br>
+
+            <label>Correo electrónico: </label>
+            <input name="email" type="email" required = "true" placeholder="Francisco@Franco" /><br><br>
+
+            <label>Número de teléfono</label>
+            <input name="telefono" type="tel" placeholder="+(34)" required = "true"/><br><br>
+
+            <label>Sexo: </label>
+            <select name="select" required="true">
+                <option selected> </option>
+                <option value="value1">Hombre</option>
+                <option value="value2">Mujer</option>
+            </select><br><br>
+            <label>Edad: </label>
+            <input type="number"  name="edad" min="18" max="99" required = "true"/><br><br>
+        </div>
+
+            <textarea required = "true" name="textarea" rows="15" cols="30" placeholder="¿ Algo que nos quieras decir ?"></textarea><br><br>
+            <label><a href="#">Términos y Condiciones de los Servicios</a></label>
+            <input type="checkbox" name="condiciones" required = "true" />
+        </fieldset>
+        <input type="submit" value="Enviar" />
+    </form>
+
+</body>
+
+</html>
