@@ -1,6 +1,6 @@
 /*TIPOGRAFÍAS*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    /*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*Tipografía de roboto: font-family:'Roboto';*/
 
 /**          PROPIEDADES GENERALES           **/
@@ -9,11 +9,15 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    /*font-size: 1em;*/
+}
+
+p,a {
+    font-size: 1em;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 800;
     color: #000;
 }
 
@@ -30,8 +34,8 @@ body header nav ul li {
 }
 
 body footer {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
 }
 
 body footer .redesSociales {
@@ -43,7 +47,7 @@ body footer .redesSociales {
 body footer .redesSociales li a i.fab {
     color: #000 !important;
     margin: 0 25px;
-    font-size: 60px;
+    font-size: 3em;
 }
 
 /**************************** PÁGINA BLOG *************************************/
