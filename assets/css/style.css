@@ -11,6 +11,19 @@
     padding: 0;
 }
 
+body header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+body header nav ul li {
+    margin: 0 auto;
+}
+body .imagenfull{
+    width: 100vw !important;
+    height: 20vh !important;
+    background-attachment: scroll;
+}
+
 /**************************** PÁGINA BLOG *************************************/
 
 body main.blog, body aside.blogA {
