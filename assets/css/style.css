@@ -40,10 +40,10 @@ body footer .redesSociales {
     flex-direction: row;
 }
 
-body footer .redesSociales li i {
+body footer .redesSociales li .fab {
     color: #000;
     margin: 0 25px;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 /**************************** PÁGINA BLOG *************************************/
