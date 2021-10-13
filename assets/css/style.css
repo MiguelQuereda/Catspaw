@@ -35,14 +35,15 @@ body footer {
 }
 
 body footer .redesSociales {
-	display: flex;
-	list-style: none;
-	flex-direction: row;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
 }
 
-body footer .redesSociales li{
-    max-width: 30px;
-    margin:0 25px;
+body footer .redesSociales li i {
+    color: #000;
+    margin: 0 25px;
+    font-size: 25px;
 }
 
 /**************************** PÁGINA BLOG *************************************/
