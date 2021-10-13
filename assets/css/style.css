@@ -21,6 +21,7 @@ body header nav ul {
     display: flex;
     flex-direction: row;
     text-align: center;
+    align-items: flex-end;
 }
 
 body header nav ul li {
@@ -28,13 +29,29 @@ body header nav ul li {
     display: inline;
 }
 
+body footer {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+body footer .redesSociales {
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+}
+
+body footer .redesSociales li{
+    max-width: 30px;
+    margin:0 25px;
+}
+
+/**************************** PÁGINA BLOG *************************************/
+
 body .imagenfull {
     width: 100vw !important;
     height: 20vh !important;
     background-attachment: scroll;
 }
-
-/**************************** PÁGINA BLOG *************************************/
 
 body main.blog, body aside.blogA {
     display: inline-flex;
