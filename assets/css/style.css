@@ -1,0 +1,27 @@
+/**************************** PÁGINA BLOG *************************************/
+body main.blog, body aside.blogA {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+main.blog {
+    width: 75%;
+    flex-direction: column !important;
+}
+
+aside.blogA {
+    width: 24% !important;
+    flex-direction: column !important;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    align-content: center;
+    align-items: center;
+}
+
+aside.blogA div {
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    margin: 10px;
+}
