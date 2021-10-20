@@ -103,10 +103,15 @@ body .Whatsapp {
    bottom: 30px;
    background-color: white;
 }
-body .Whatsapp a i{
+.blog .Whatsapp a i{
     color:green !important;
     margin: 0 25px;
     font-size: 3em;
+}
+
+.blog .ImagenEntrada .imagen{
+    width: 100%;
+    min-height: 30vh;
 }
 
 
