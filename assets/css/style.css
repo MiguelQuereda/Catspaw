@@ -101,17 +101,18 @@ body .Whatsapp {
    position: fixed;
    left: 10px;
    bottom: 30px;
-   background-color: white;
 }
 .blog .Whatsapp a i{
     color:green !important;
     margin: 0 25px;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .blog .ImagenEntrada .imagen{
     width: 100%;
     min-height: 30vh;
+    background-image: "/Catspaw/assets/images/fondo01.png";
+    background-size: contain;
 }
 
 
