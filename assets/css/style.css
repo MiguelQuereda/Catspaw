@@ -9,6 +9,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 p,a {
@@ -49,7 +50,17 @@ body footer .redesSociales li a i.fab {
     margin: 0 25px;
     font-size: 3em;
 }
+/**************************** PÁGINA INICIO *************************************/
 
+
+body main .Ventajas, body main .Caracteristicas {
+	display: flex;
+	justify-content: space-around;
+}
+
+body main .Ventajas .ventaja h3 {
+	margin: 10px 0;
+}
 /**************************** PÁGINA BLOG *************************************/
 
 body .imagenfull {
