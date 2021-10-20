@@ -100,12 +100,12 @@ body aside.blogA div {
 body .Whatsapp {
    position: fixed;
    left: 10px;
-   bottom: 10px;
+   bottom: 30px;
 }
 body .Whatsapp a i{
     color:green !important;
     margin: 0 25px;
-    font-size: 1em;
+    font-size: 6em;
 }
 
 
