@@ -36,28 +36,34 @@
 
                 <legend>Datos personales</legend>
                 <div class="datos personales">
-                    <label>Nombre y apellidos: </label>
-                    <input name="nombre" type="text" pattern="[a-zA-Z]{1,30}" required="true"
-                        placeholder="Francisco Franco" autofocus="true" /><br><br>
-
-                    <label>Correo electrónico: </label>
-                    <input name="email" type="email" required="true" placeholder="Francisco@Franco" /><br><br>
-
-                    <label>Número de teléfono</label>
-                    <input name="telefono" type="tel" placeholder="+(34)" required="true" /><br><br>
-
-                    <label>Sexo: </label>
-                    <select name="select" required="true">
-                        <option selected> </option>
-                        <option value="value1">Hombre</option>
-                        <option value="value2">Mujer</option>
-                    </select><br><br>
-                    <label>Edad: </label>
-                    <input type="number" name="edad" min="18" max="99" required="true" /><br><br>
+                    <div class="NyA">
+                        <input name="nombre" type="text" pattern="[a-zA-Z]{1,30}" required="true" placeholder="Nombre"
+                            autofocus="true" />
+                        <input name="apellidos" type="text" pattern="[a-zA-Z]{1,30}" required="true"
+                            placeholder="Apellidos" autofocus="true" />
+                    </div>
+                    <div class="Mail">
+                        <input name="email" type="email" required="true" placeholder="Correo Electrónico" />
+                    </div>
+                    <div class="tlf">
+                        <input name="telefono" type="tel" placeholder="Teléfono: (+34)" required="true" />
+                    </div>
+                    <div class="sexo">
+                        <label>Sexo: </label>
+                        <select name="select" required="true">
+                            <option selected> </option>
+                            <option value="value1">Hombre</option>
+                            <option value="value2">Mujer</option>
+                        </select>
+                    </div>
+                    <div class="edad">
+                        <label>Edad: </label>
+                        <input type="number" name="edad" min="18" max="99" required="true" />
+                    </div>
                 </div>
 
                 <textarea required="true" name="textarea" rows="15" cols="30"
-                    placeholder="¿ Algo que nos quieras decir ?"></textarea><br><br>
+                    placeholder="¿ Algo que nos quieras decir ?"></textarea>
                 <label><a href="#">Términos y Condiciones de los Servicios</a></label>
                 <input type="checkbox" name="condiciones" required="true" />
             </fieldset>
@@ -69,7 +75,7 @@
             <ul class="redesSociales">
                 <li><a href="contacte.html"><span><i class="fab fa-whatsapp-square"></i></span></a></li>
                 <li><a href="www.twiter.es"><span><i class="fab fa-twitter-square"></i></span></a></li>
-                    <li><a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
             </ul>
         </div>
         <div class="logotipo">
