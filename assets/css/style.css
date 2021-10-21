@@ -1,5 +1,7 @@
 /*TIPOGRAFÍAS*/
-    /*Roboto*/
+
+/*Roboto*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*Tipografía de roboto: font-family:'Roboto';*/
 
@@ -12,10 +14,11 @@
     box-sizing: border-box;
 }
 
-p,a {
+p, a {
     font-size: 1em;
     text-decoration: none;
     margin: 10px auto;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,19 +26,41 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
-body header nav ul {
+body header {
+    background-color: black;
+    ;
+}
+
+body header ul {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: flex-end;
 }
 
-body header nav ul li {
+header ul li {
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
     margin: 15px auto;
     display: inline;
 }
 
+header nav ul .txt:hover {
+    border: 2px solid #fff;
+}
+
+header nav ul li a {
+    color: #000 !important;
+}
+
+header nav ul li:hover a {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
 body footer {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -53,15 +78,16 @@ body footer .redesSociales li a i.fab {
 }
 
 main.ImagenEntrada .imagen {
-	width: 100%;
-	height: 30vw;
-	background-image: url("../images/fondo01.png");
-	background-size: cover;
-	background-position-x: center;
-	background-position-y: center;
+    width: 100%;
+    height: 30vw;
+    background-image: url("../images/fondo01.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
+
 main .ImagenEntrada .titulo {
-	text-align: center;
+    text-align: center;
     font-size: 5em;
     font-weight: 800;
 }
@@ -72,21 +98,16 @@ main .imagenfull {
 
 /**************************** PÁGINA INICIO *************************************/
 
-
 body main .Ventajas, body main .Caracteristicas {
-	display: flex;
-	justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 body main .Ventajas .ventaja h3 {
-	margin: 10px 0;
+    margin: 10px 0;
 }
+
 /**************************** PÁGINA BLOG *************************************/
-
-
-
-
-
 
 body main.blog, body aside.blogA {
     display: inline-flex;
@@ -116,22 +137,21 @@ body aside.blogA div {
 }
 
 body .Whatsapp {
-   position: fixed;
-   left: 10px;
-   bottom: 30px;
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
 }
-.blog .Whatsapp a i{
-    color:green ;
+
+.blog .Whatsapp a i {
+    color: green;
     margin: 0 25px;
     font-size: 5em;
 }
 
 .Whatsapp a i {
-	font-size: 4em;
-	color: green;
+    font-size: 4em;
+    color: green;
 }
-
-
 
 /********************** SERVEIS *****************************/
 
@@ -141,4 +161,61 @@ main .tabla {
     text-align: center;
     border: 4px solid #000;
     margin: 10px 0;
+    border-collapse: collapse;
+    text-align: cen;
+}
+main .tabla tbody tr td {
+    padding: 20px;
+}
+main .tabla tbody tr:first-child{
+	background-color: rgba(20,20,20,0.3);
+}
+
+main .tabla tbody tr:nth-child(2n) {
+	background-color: rgba(20,20,20,1);
+    color: white;
+    border-left: 2px solid;
+}
+
+
+/***    CONTACTANOS     ***/
+
+.contacto {
+    width: 80% !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contacto legend {
+    font-size: 2em;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.contacto .datos div {
+    display: inline-block;
+}
+
+.contacto .datos .NyA input {
+    display: block !important;
+    margin: 20px auto;
+}
+
+.contacto textarea {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    height: 100px;
+}
+
+.contacto label {
+    margin: 20px;
+}
+
+.contacto .enviar {
+    width: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
 }
