@@ -51,6 +51,25 @@ body footer .redesSociales li a i.fab {
     margin: 0 25px;
     font-size: 3em;
 }
+
+main.ImagenEntrada .imagen {
+	width: 100%;
+	height: 30vw;
+	background-image: url("../images/fondo01.png");
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+}
+main .ImagenEntrada .titulo {
+	text-align: center;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+main .imagenfull {
+    width: 40%;
+}
+
 /**************************** PÁGINA INICIO *************************************/
 
 
@@ -65,23 +84,6 @@ body main .Ventajas .ventaja h3 {
 /**************************** PÁGINA BLOG *************************************/
 
 
-.blog .ImagenEntrada .imagen {
-	width: 100%;
-	height: 30vw;
-	background-image: url("../images/fondo01.png");
-	background-size: cover;
-	background-position-x: center;
-	background-position-y: center;
-}
-.blog .ImagenEntrada .titulo {
-	text-align: center;
-    font-size: 5em;
-    font-weight: 800;
-}
-
-.blog .imagenfull {
-    width: 40%;
-}
 
 
 
