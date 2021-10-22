@@ -117,12 +117,22 @@ body main.blog, body aside.blogA {
 body main.blog {
     width: 75%;
     flex-direction: column !important;
+    margin: 15px;
+}
+.blog .cojines {
+	text-align: center;
+}
+.blog .cojines .Imagen {
+	display: inline-block;
 }
 
+.blog .cojines .productos {
+	text-align: left;
+	margin: 15px 0;
+}
 body aside.blogA {
-    width: 24% !important;
+    width: 22% !important;
     flex-direction: column !important;
-    position: fixed;
     text-align: center;
     background-color: black;
     align-content: center;
@@ -138,14 +148,8 @@ body aside.blogA div {
 
 body .Whatsapp {
     position: fixed;
-    left: 10px;
+    right: 15px;
     bottom: 30px;
-}
-
-.blog .Whatsapp a i {
-    color: green;
-    margin: 0 25px;
-    font-size: 5em;
 }
 
 .Whatsapp a i {
