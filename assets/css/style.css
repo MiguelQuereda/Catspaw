@@ -67,9 +67,10 @@ body footer {
 }
 
 body footer .redesSociales {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 body footer .redesSociales li a i.fab {
@@ -146,7 +147,9 @@ body aside.blogA div {
     border-radius: 20px;
     margin: 10px;
 }
-
+body aside.blogA .articulos p {
+	text-align: center;
+}
 body .Whatsapp {
     position: fixed;
     right: 15px;
