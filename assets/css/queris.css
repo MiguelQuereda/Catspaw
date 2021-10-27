@@ -1,0 +1,36 @@
+@media (max-width: 728px) {
+    body{
+        display: none;
+    }
+    /****   GENERALES *****/
+    body footer {
+        margin-top: 20px;
+        display: inline;
+        justify-content: space-around;
+    }
+    /*BLOG*/
+    
+    body main.blog, body aside.blogA {
+        display: inline-block;
+        flex-direction: row;
+    }
+    body main.blog {
+        width: 100%;
+        flex-direction: column !important;
+        margin: 15px;
+    }
+    .blog .cojines .Imagen {
+        display: inline-block;
+        text-align: center;
+    }
+    body main.blog .leyenda {
+        width: 90%;
+        margin: 0 auto;
+    }
+    body aside.blogA {
+        width: 100vw !important;
+    }
+    main .imagenfull img {
+        width: 70vw;
+    }
+}

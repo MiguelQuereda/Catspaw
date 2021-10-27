@@ -19,6 +19,7 @@ p, a {
     text-decoration: none;
     margin: 10px auto;
     color: black;
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,8 +93,8 @@ main .ImagenEntrada .titulo {
     font-weight: 800;
 }
 
-main .imagenfull {
-    width: 40%;
+main .imagenfull img {
+    width: 100%;
 }
 
 /**************************** PÁGINA INICIO *************************************/
@@ -115,7 +116,7 @@ body main.blog, body aside.blogA {
 }
 
 body main.blog {
-    width: 75%;
+    width: 74%;
     flex-direction: column !important;
     margin: 15px;
 }
@@ -131,7 +132,7 @@ body main.blog {
 	margin: 15px 0;
 }
 body aside.blogA {
-    width: 22% !important;
+    width: 22%;
     flex-direction: column !important;
     text-align: center;
     background-color: black;
