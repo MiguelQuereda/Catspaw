@@ -1,12 +1,20 @@
 @media (max-width: 728px) {
+    
+    /****   GENERALES *****/
     body {
         text-align: center;
     }
-    /****   GENERALES *****/
+    main .ImagenEntrada .titulo {
+        font-size: 4em;
+    }
     body footer {
-        margin-top: 20px;
+        margin-top: 40px;
         display: inline;
         justify-content: space-around;
+    }
+
+    body footer div {
+        margin: 20px 0;
     }
     /*BLOG*/
     body main.blog, body aside.blogA {
@@ -37,4 +45,23 @@
     main .imagenfull img {
         width: 70vw;
     }
+
+    /*  SERVICIOS */
+
+    body main .datos.personales div {
+        width: 100%;
+        margin: 10px auto;
+    }
+    body main .contacto .datos  input {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+    .contacto label {
+        margin: 20px 40px;
+    }
+    .datos.personales {
+        text-align: left;
+    }
+
 }

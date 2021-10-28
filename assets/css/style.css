@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body header {
     background-color: black;
-    ;
+    box-shadow: gray 0px 1px 25px;
 }
 
 body header ul {
@@ -45,10 +45,15 @@ header ul li {
     border-radius: 20px;
     margin: 15px auto;
     display: inline;
+    text-shadow: #000 0px 0px 0px;
+}
+
+header ul li:hover {
+    text-shadow: #000 2px 4px 8px;
 }
 
 header nav ul .txt:hover {
-    border: 2px solid #fff;
+    border: 0px solid #fff;
 }
 
 header nav ul li a {
@@ -67,10 +72,10 @@ body footer {
 }
 
 body footer .redesSociales {
-	display: flex;
-	list-style: none;
-	flex-direction: row;
-	justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 body footer .redesSociales li a i.fab {
@@ -121,17 +126,22 @@ body main.blog {
     flex-direction: column !important;
     margin: 15px;
 }
+
 .blog .cojines {
-	text-align: center;
+    text-align: center;
 }
+
 .blog .cojines .Imagen {
-	display: inline-block;
+    display: inline-block;
 }
 
 .blog .cojines .productos {
-	text-align: left;
-	margin: 15px 0;
+    text-align: left;
+    margin: 15px 0;
 }
+
+
+
 body aside.blogA {
     width: 22%;
     flex-direction: column !important;
@@ -139,6 +149,7 @@ body aside.blogA {
     background-color: black;
     align-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 body aside.blogA div {
@@ -147,9 +158,20 @@ body aside.blogA div {
     border-radius: 20px;
     margin: 10px;
 }
-body aside.blogA .articulos p {
-	text-align: center;
+body aside.blogA .articulos:last-child {
+    background: rgba(2, 0, 36,0.2);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.2) 0%, rgba(18, 18, 19, 0.2) 30%, rgba(242, 253, 255, 0.2) 100%);
 }
+body aside.blogA .articulos:last-child p {
+    color: white;
+    font-style: italic;
+    font-weight: 800;
+}
+
+body aside.blogA .articulos p {
+    text-align: center;
+}
+
 body .Whatsapp {
     position: fixed;
     right: 15px;
@@ -172,19 +194,20 @@ main .tabla {
     border-collapse: collapse;
     text-align: cen;
 }
+
 main .tabla tbody tr td {
     padding: 20px;
 }
-main .tabla tbody tr:first-child{
-	background-color: rgba(20,20,20,0.3);
+
+main .tabla tbody tr:first-child {
+    background-color: rgba(20, 20, 20, 0.3);
 }
 
 main .tabla tbody tr:nth-child(2n) {
-	background-color: rgba(20,20,20,1);
+    background-color: rgba(20, 20, 20, 1);
     color: white;
     border-left: 2px solid;
 }
-
 
 /***    CONTACTANOS     ***/
 
