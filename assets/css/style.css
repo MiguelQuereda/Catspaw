@@ -46,6 +46,24 @@ header ul li {
     margin: 15px auto;
     display: inline;
     text-shadow: #000 0px 0px 0px;
+    position:relative;
+    transition: 1s linear;
+
+}
+
+header ul .txt img {
+    Scale: 0;
+    transform-origin:bottom center;
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	left: 0px;
+    transition: 0.1s linear;
+
+}
+header ul .txt:hover img {
+    Scale: 1;
+	
 }
 
 header ul li:hover {
