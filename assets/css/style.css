@@ -218,7 +218,7 @@ main .tabla {
     border: 4px solid #000;
     margin: 10px 0;
     border-collapse: collapse;
-    display: none;
+    display: inherit;
 }
 
 main .tabla tbody tr td {
@@ -235,45 +235,10 @@ main .tabla tbody tr:nth-child(2n) {
     border-left: 2px solid;
 }
 
-/*  SOLO MOVIL / TABLET */
 
-
-
-body main .Servicios {
-	display: flex;
-	margin: 25px;
-	text-align: center;
-	flex-wrap: wrap;
-	justify-content: center;
+body main .Servicios{
+    display: none;
 }
-
-body main .Servicios .Servicio {
-	width: 80%;
-	max-width: 300px;
-    margin: 20px 10px;
-}
-
-body main .Servicios .Servicio h3 {
-	font-size: 3em;
-    text-transform: uppercase;
-	letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-body main .Servicios .Servicio img {
-	width: 100%;
-    box-shadow:gray 8px 6px 8px;
-}
-body main .Servicios .Servicio ul{
-    margin: 20px 0;
-}
-
-body main .Servicios .Servicio ul li {
-	text-transform: uppercase;
-	font-weight: bold;
-    margin: 10px 0;
-}
-
 
 
 /***    CONTACTANOS     ***/
