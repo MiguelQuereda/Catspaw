@@ -122,10 +122,59 @@ main .imagenfull img {
 }
 
 /**************************** PÁGINA INICIO *************************************/
+.index .imagenfull {
+	width: 100%;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+    background-image: url("../images/portada.png");
+}
 
-body main .Ventajas, body main .Caracteristicas {
-    display: flex;
-    justify-content: space-around;
+.index .imagenfull .texto {
+	width: 70%;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+}
+.index .imagenfull .texto h2 {
+	margin: 20px 0px;
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 10px;
+}
+
+.index .imagenfull .texto h3 {
+	text-transform: uppercase;
+	font-size: 1em;
+    letter-spacing: 5px;
+}
+
+
+body main .chicha .Ventajas .ventaja, body main .Caracteristicas .caracteristica {
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+}
+
+body main .chicha .Ventajas .ventaja img, body main .Caracteristicas .caracteristica img {
+	width: 100%;
+    max-height: 300px;
+}
+
+body main .chicha .Ventajas .ventaja p{
+    text-align: center;
+}
+
+body main .chicha .Ventajas, body main .Caracteristicas {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0;
+	border-bottom: 2px solid black;
 }
 
 body main .Ventajas .ventaja h3 {
@@ -219,6 +268,8 @@ main .tabla {
     margin: 10px 0;
     border-collapse: collapse;
     display: inherit;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 main .tabla tbody tr td {
