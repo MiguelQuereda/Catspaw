@@ -159,6 +159,7 @@ body main .chicha .Ventajas .ventaja, body main .Caracteristicas .caracteristica
 	flex-direction: column;
     text-align: center;
     padding: 0 10px;
+    margin: 20px 0;
 }
 
 body main .chicha .Ventajas .ventaja img, body main .Caracteristicas .caracteristica img {
@@ -175,12 +176,16 @@ body main .chicha .Ventajas, body main .Caracteristicas {
 	justify-content: space-around;
 	margin: 40px 0;
 	border-bottom: 2px solid black;
+    flex-direction: row;
 }
 
 body main .Ventajas .ventaja h3 {
     margin: 10px 0;
 }
 
+body main a:hover{
+    text-transform: uppercase;
+}
 /**************************** PÁGINA BLOG *************************************/
 
 body main.blog, body aside.blogA {
