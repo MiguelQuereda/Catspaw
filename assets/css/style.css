@@ -130,6 +130,10 @@ main .imagenfull img {
 	justify-content: center;
 	text-align: center;
     background-image: url("../images/portada.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .index .imagenfull .texto {
@@ -275,7 +279,9 @@ main .tabla {
     display: inherit;
     max-width: 800px;
     margin: 20px auto;
+    box-shadow: gray 9px 9px 10px;
 }
+
 
 main .tabla tbody tr td {
     padding: 20px;
