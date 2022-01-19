@@ -1,113 +1,157 @@
 @media (max-width: 728px) {
+
     /****   GENERALES *****/
     body {
         text-align: center;
     }
+
     main .ImagenEntrada .titulo {
         font-size: 4em;
     }
+
     body footer {
         margin-top: 40px;
         display: inline;
         justify-content: space-around;
     }
+
     body footer div {
         margin: 20px 0;
     }
+
     /* INDEX */
     body main .chicha .Ventajas, body main .Caracteristicas {
         flex-direction: column;
     }
+
     body main .chicha .Ventajas .ventaja img, body main .Caracteristicas .caracteristica img {
         max-width: 500px;
         max-height: 300px;
         margin: 0 auto;
     }
+
     /*BLOG*/
     body main.blog, body aside.blogA {
         display: inline-block;
         flex-direction: row;
     }
+
     body main.blog {
         width: 80%;
     }
+
     .blog .cojines .Imagen {
         display: inline-block;
         text-align: center;
     }
+
     body main.blog .leyenda {
         width: 90%;
         margin: 0 auto;
     }
+
     body aside.blogA {
         width: 100vw !important;
         padding: 15px;
     }
+
     body aside.blogA div {
         background-color: white;
         width: 90%;
         border-radius: 20px;
         margin: 0 auto;
     }
+
     main .imagenfull img {
         width: 70vw;
     }
+
+
+    
+
+    .blog .videoArt nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 100%;
+}
+
+    .blog .videoArt input {
+        color: white;
+    }
+
+    .blog .videoArt label {
+        font-weight: 800;
+        padding-top: 10px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-left: none !important;
+        border-top: 2px solid;
+    }
+
+
     /*  SERVICIOS */
     body main .datos.personales div {
         width: 100%;
         margin: 10px auto;
     }
+
     body main .contacto .datos input {
         display: block;
         margin: 15px auto;
         width: 80%;
     }
+
     .contacto label {
         margin: 20px 40px;
     }
+
     .datos.personales {
         text-align: left;
     }
+
     body .serveis .tabla {
         display: none;
     }
+
     /*  SOLO MOVIL / TABLET */
 
 
 
-body main .Servicios {
-	display: flex;
-	margin: 25px;
-	text-align: center;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+    body main .Servicios {
+        display: flex;
+        margin: 25px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-body main .Servicios .Servicio {
-	width: 80%;
-	max-width: 300px;
-    margin: 20px 10px;
-}
+    body main .Servicios .Servicio {
+        width: 80%;
+        max-width: 300px;
+        margin: 20px 10px;
+    }
 
-body main .Servicios .Servicio h3 {
-	font-size: 3em;
-    text-transform: uppercase;
-	letter-spacing: 2px;
-    margin-bottom: 10px;
-}
+    body main .Servicios .Servicio h3 {
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
 
-body main .Servicios .Servicio img {
-	width: 100%;
-    box-shadow:gray 8px 6px 8px;
-}
-body main .Servicios .Servicio ul{
-    margin: 20px 0;
-}
+    body main .Servicios .Servicio img {
+        width: 100%;
+        box-shadow: gray 8px 6px 8px;
+    }
 
-body main .Servicios .Servicio ul li {
-	text-transform: uppercase;
-	font-weight: bold;
-    margin: 10px 0;
-}
+    body main .Servicios .Servicio ul {
+        margin: 20px 0;
+    }
+
+    body main .Servicios .Servicio ul li {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0;
+    }
 
 }

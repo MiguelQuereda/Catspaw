@@ -5,15 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-@font-face { 
-    font-family: 'Montserrat-Bold'; 
-    src: local('Open Sans'), 
-        url("../webfonts/montserrat-bold-webfont.woff2") format('woff2'), 
-        url("../webfonts/montserrat-bold-webfont.woff") format('woff'), 
-        url("../webfonts/montserrat-bold-webfont.ttf") format('truetype'), 
-        url("../webfonts/montserrat-bold-webfont.otf") format('opentype'), 
-        url("../webfonts/montserrat-bold-webfont.eot") format('embedded-opentype'); 
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: local('Open Sans'),
+        url("../webfonts/montserrat-bold-webfont.woff2") format('woff2'),
+        url("../webfonts/montserrat-bold-webfont.woff") format('woff'),
+        url("../webfonts/montserrat-bold-webfont.ttf") format('truetype'),
+        url("../webfonts/montserrat-bold-webfont.otf") format('opentype'),
+        url("../webfonts/montserrat-bold-webfont.eot") format('embedded-opentype');
 }
+
 /*Tipografía de roboto: font-family:'Roboto';*/
 
 /**          PROPIEDADES GENERALES           **/
@@ -57,24 +58,25 @@ header ul li {
     margin: 15px auto;
     display: inline;
     text-shadow: #000 0px 0px 0px;
-    position:relative;
+    position: relative;
     transition: 1s linear;
 
 }
 
 header ul .txt img {
     Scale: 0;
-    transform-origin:bottom center;
-	position: absolute;
-	bottom: 40px;
-	width: 100%;
-	left: 0px;
+    transform-origin: bottom center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0px;
     transition: 0.1s linear;
 
 }
+
 header ul .txt:hover img {
     Scale: 1;
-	
+
 }
 
 header ul li:hover {
@@ -134,63 +136,66 @@ main .imagenfull img {
 
 /**************************** PÁGINA INICIO *************************************/
 .index .imagenfull {
-	width: 100%;
-	height: 350px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/portada.png");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
     background-size: cover;
     background-attachment: fixed;
 }
 
 .index .imagenfull .texto {
-	width: 70%;
-	margin: 0 auto;
-	background-color: rgba(255,255,255,0.5);
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
+
 .index .imagenfull .texto h2 {
-	margin: 20px 0px;
-	text-transform: uppercase;
-	font-size: 2em;
-	letter-spacing: 10px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 10px;
 }
 
 .index .imagenfull .texto h3 {
-	text-transform: uppercase;
-	font-size: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
     letter-spacing: 5px;
 }
 
 
 body main .chicha .Ventajas .ventaja, body main .Caracteristicas .caracteristica {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 0 10px;
     margin: 20px 0;
 }
 
 body main .chicha .Ventajas .ventaja img, body main .Caracteristicas .caracteristica img {
-	width: 100%;
+    width: 100%;
     max-height: 300px;
 }
 
-body main .chicha .Ventajas .ventaja p{
+body main .chicha .Ventajas .ventaja p {
     text-align: center;
 }
 
 body main .chicha .Ventajas, body main .Caracteristicas {
-	display: flex;
-	justify-content: space-around;
-	margin: 40px 0;
-	border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    border-bottom: 2px solid black;
     flex-direction: row;
 }
 
@@ -198,9 +203,10 @@ body main .Ventajas .ventaja h3 {
     margin: 10px 0;
 }
 
-body main a:hover{
+body main a:hover {
     text-transform: uppercase;
 }
+
 /**************************** PÁGINA BLOG *************************************/
 
 body main.blog, body aside.blogA {
@@ -217,10 +223,11 @@ body main.blog {
 .blog .cojines {
     text-align: center;
 }
+
 .blog .articMain h2 {
-	font-size: 3em;
-	text-align: center;
-	margin-top: 30px;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .blog .cojines .Imagen {
@@ -231,16 +238,61 @@ body main.blog {
     text-align: left;
     margin: 15px 0;
 }
+
 .blog .articulo {
-	margin: 40px 0;
+    margin: 40px 0;
 }
 
-.blog .articulo h2{
+.blog .articulo h2 {
     font-size: 2.5em;
     text-transform: uppercase;
-	letter-spacing: 2px;
+    letter-spacing: 2px;
     margin-bottom: 10px;
 }
+
+.blog .videoArt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.blog .videoArt nav {
+    margin: 10px;
+    padding: 20px 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.blog .videoArt input, .blog .sonidos button {
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 2px lightgray;
+}
+
+.blog .videoArt label {
+    font-weight: 800;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid black;
+}
+
+
+.blog .sonidos {
+	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+    padding: 0 30px;
+}
+
+#media,#media1{
+    width: 100%;
+}
+
+
+
 body aside.blogA {
     width: 22%;
     flex-direction: column !important;
@@ -257,10 +309,12 @@ body aside.blogA div {
     border-radius: 20px;
     margin: 10px;
 }
+
 body aside.blogA .articulos:last-child {
-    background: rgba(2, 0, 36,0.2);
+    background: rgba(2, 0, 36, 0.2);
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.2) 0%, rgba(18, 18, 19, 0.2) 30%, rgba(242, 253, 255, 0.2) 100%);
 }
+
 body aside.blogA .articulos:last-child p {
     color: white;
     font-style: italic;
@@ -314,7 +368,7 @@ main .tabla tbody tr:nth-child(2n) {
 }
 
 
-body main .Servicios{
+body main .Servicios {
     display: none;
 }
 
