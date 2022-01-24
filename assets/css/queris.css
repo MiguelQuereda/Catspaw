@@ -1,10 +1,13 @@
+
 @media (max-width: 728px) {
 
     /****   GENERALES *****/
     body {
         text-align: center;
     }
-
+    body header ul {
+        flex-direction: column !important;
+    }
     main .ImagenEntrada .titulo {
         font-size: 4em;
     }
