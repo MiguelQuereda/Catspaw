@@ -91,7 +91,12 @@
         border-left: none !important;
         border-top: 2px solid;
     }
-
+    .sonidos{
+        flex-direction: column;
+    }
+    .sonidos div button {
+        width: 100%;
+    }
 
     /*  SERVICIOS */
     body main .datos.personales div {
