@@ -414,3 +414,9 @@ body main .Servicios {
     color: white;
     margin-top: 15px;
 }
+
+.videoPasar h3, .videoPasar h4{
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
