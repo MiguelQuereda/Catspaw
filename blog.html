@@ -16,32 +16,57 @@
     <meta name="description"
         content="Cat's paw, tu tienda de cojines y almohadas para toda tu familia, aptos para 2 y 4 patas.">
     <script src="https://kit.fontawesome.com/f3e03728a9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
+        <div class="headMov">
 
-                <li class="nav txt">
-                    <a href="index.html" class="menuitem ">Inicio</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav txt"><a href="blog.html" class="menuitem ">Blog</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav"><a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png"
-                            alt="logotipo"></a></li>
-                <li class="nav txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav txt"><a href="serveis.html" class="menuitem">Servicios</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-            </ul>
-        </nav>
+            <a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png" alt="wwt"></a>
+
+            <div class="hamburger" id="hamburguesa">
+               <p>Despliega el menú  &darr; </p>
+            </div>
+            <nav id="menuMovil" class="menuppal">
+                <ul class="navbar">
+                    <li class="nav mov_txt">
+                        <a href="index.html" class="menuitem ">Inicio</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="blog.html" class="menuitem ">Blog</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="serveis.html" class="menuitem">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headOrd">
+            <nav>
+                <ul class="navbar">
+                    <li class="nav txt">
+                        <a href="index.html" class="menuitem ">Inicio</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav txt"><a href="blog.html" class="menuitem ">Blog</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav"><a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png"
+                                alt="wwt"></a></li>
+                    <li class="nav txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav txt"><a href="serveis.html" class="menuitem">Servicios</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main class="blog">
         <section class="ImagenEntrada">
@@ -63,7 +88,7 @@
         </section>
         <section class="articMain">
             <h2>Nuestros casos</h2>
-            <article class="articulo 01"><a name="art01"></a>
+            <article class="articulo 01" id="articulo01"><a name="art01"></a>
                 <h3>Lorem ipsum</h3>
                 <img src="assets/images/gato-marron_0.png" width="100%" name="primeraImagen" alt="Ejemplo01">
                 <p>
@@ -97,7 +122,7 @@
                     width="80%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
             </article>
-            <article class="articulo 02"><a name="art02"></a>
+            <article class="articulo 02" id="articulo02"><a name="art02"></a>
                 <h3>Lorem ipsum</h3>
                 <img src="assets/images/gato-marron_0.png" width="100%" name="primeraImagen" alt="CabeceraSeccion">
                 <p>
@@ -131,7 +156,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </article>
-            <article class="articulo 03"> <a name="art03"></a>
+            <article class="articulo 03" id="articulo03"> <a name="art03"></a>
                 <h3>Lorem ipsum</h3>
                 <img src="assets/images/gato-marron_0.png" width="100%" name="primeraImagen" alt="Ejemplo01">
                 <p>
@@ -177,7 +202,7 @@
                     consectetur. Sed non diam et diam bibendum varius. Nulla facilisi.
                 </p>
             </article>
-            <article class="articulo 04"> <a name="art04"></a>
+            <article class="articulo 04" id="articulo04"> <a name="art04"></a>
                 <h3>Lorem ipsum</h3>
                 <img src="assets/images/gato-marron_0.png" width="100%" name="primeraImagen" alt="Ejemplo01">
                 <p>
@@ -240,21 +265,21 @@
                 </audio>
             </article>
             <article class="articulo 07 videoArt">
-                    <video id="medio" width="720" height="400">
-                      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
-                      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
-                    </video>
-                    <nav>
-                      <input type="button" id="reiniciar" value="reiniciar">
-                      <input type="button" id="retrasar" value="&laquo;">
-                      <input type="button" id="play" value="&#9658;">
-                      <input type="button" id="adelantar" value="&raquo;">
-                      <input type="button" id="silenciar" value="silenciar">
-                      <label>Volumen</label><span id="porVol"></span>
-                      <input type="button" id="menosVolumen" value="-">
-                      <input type="button" id="masVolumen" value="+">
-                    </nav>
-                    <script src="assets/js/video.js"></script>
+                <video id="medio" width="720" height="400">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
+                </video>
+                <nav>
+                    <input type="button" id="reiniciar" value="reiniciar">
+                    <input type="button" id="retrasar" value="&laquo;">
+                    <input type="button" id="play" value="&#9658;">
+                    <input type="button" id="adelantar" value="&raquo;">
+                    <input type="button" id="silenciar" value="silenciar">
+                    <label>Volumen</label><span id="porVol"></span>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </nav>
+                <script src="assets/js/video.js"></script>
             </article>
             <article class="articulo sonidos">
                 <div class="audioA">
@@ -279,54 +304,54 @@
         <section>
             <div id="box">
                 <div class="cat">
-                  <div class="head">
-                    <div class="ears">
-                      <div class="ear left"></div>
-                      <div class="ear right"></div>
-                    </div>
-                    <div class="eyes">
-                      <div class="eye left"></div>
-                      <div class="eye right"></div>
-                    </div>
-                    <div class="muzzle">
-                      <div class="nose"></div>
-                    </div>
-                  </div>
-                  <div class="body">
-                    <div class="paw"></div>
-                  </div>
-                  <div class="tail">
-                    <div class="tail-segment">
-                      <div class="tail-segment">
-                        <div class="tail-segment">
-                          <div class="tail-segment">
-                            <div class="tail-segment">
-                              <div class="tail-segment">
-                                 <div class="tail-segment">
-                                  <div class="tail-segment">
-                                    <div class="tail-segment">
-                                      <div class="tail-segment">
-                                        <div class="tail-segment">
-                                          <div class="tail-segment">
-                                            <div class="tail-segment">
-                                              <div class="tail-segment">
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                    <div class="head">
+                        <div class="ears">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
                         </div>
-                      </div>
+                        <div class="eyes">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                        </div>
+                        <div class="muzzle">
+                            <div class="nose"></div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="body">
+                        <div class="paw"></div>
+                    </div>
+                    <div class="tail">
+                        <div class="tail-segment">
+                            <div class="tail-segment">
+                                <div class="tail-segment">
+                                    <div class="tail-segment">
+                                        <div class="tail-segment">
+                                            <div class="tail-segment">
+                                                <div class="tail-segment">
+                                                    <div class="tail-segment">
+                                                        <div class="tail-segment">
+                                                            <div class="tail-segment">
+                                                                <div class="tail-segment">
+                                                                    <div class="tail-segment">
+                                                                        <div class="tail-segment">
+                                                                            <div class="tail-segment">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <section class="barras">
             <div class="loader-2">
@@ -335,27 +360,27 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-              </div>
+            </div>
         </section>
     </main>
     <aside class="blogA">
-        <div class="articulos articulo01"><a href="#art01">
+        <div class="articulos articulo01" id="fart01"><a href="#art01">
                 <img src="assets/images/gato-marron_0.png" width="150px" name="primeraImagen" alt=" ">
                 <p><i>Primer Artículo</i></p>
             </a></div>
-        <div class="articulos articulo02"><a href="#art02">
+        <div class="articulos articulo02" id="fart02"><a href="#art02">
                 <img src="assets/images/gato-marron_0.png" width="150px" name="primeraImagen" alt=" ">
                 <p><i>Segundo Artículo</i></p>
             </a></div>
-        <div class="articulos articulo03"><a href="#art03">
+        <div class="articulos articulo03" id="fart03"><a href="#art03">
                 <img src="assets/images/gato-marron_0.png" width="150px" name="primeraImagen" alt=" ">
                 <p><i>Tercer Artículo</i></p>
             </a></div>
-        <div class="articulos articulo03"><a href="#art04">
+        <div class="articulos articulo03" id="fart04"><a href="#art04">
                 <img src="assets/images/gato-marron_0.png" width="150px" name="primeraImagen" alt=" ">
                 <p><i>Cuarto Artículo</i></p>
             </a></div>
-        
+
     </aside>
     <div class="Whatsapp">
         <a href="https://wa.me/625023078"><i class="fab fa-whatsapp-square"></i></a>
@@ -372,7 +397,12 @@
             <a href="index.html"><img alt="logotipo" src="assets/images/Logotipo.png"></a>
             <img src="assets/images/AA.png" name="AAcertificado" alt="CertificadoAA">
         </div>
+        <div id="back">
+            Arriba
+        </div>
     </footer>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/header.js"></script>
 </body>
 
 </html>

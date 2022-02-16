@@ -5,41 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Cat's Paw: Blog</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <meta name="description"
-        content="Cat's paw, tu tienda de cojines y almohadas para toda tu familia, aptos para 2 y 4 patas.">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
     <link rel="stylesheet" media="screen" href="assets/css/queris.css">
     <link rel="stylesheet" media="print" href="assets/css/printStyle.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
     <meta name="description"
         content="Cat's paw, tu tienda de cojines y almohadas para toda tu familia, aptos para 2 y 4 patas.">
     <script src="https://kit.fontawesome.com/f3e03728a9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
+        <div class="headMov">
 
-                <li class="nav txt">
-                    <a href="index.html" class="menuitem ">Inicio</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav txt"><a href="blog.html" class="menuitem ">Blog</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav"><a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png"
-                            alt="logotipo"></a></li>
-                <li class="nav txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-                <li class="nav txt"><a href="serveis.html" class="menuitem">Servicios</a>
-                    <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
-                </li>
-            </ul>
-        </nav>
+            <a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png" alt="wwt"></a>
+
+            <div class="hamburger" id="hamburguesa">
+               <p>Despliega el menú  &darr; </p>
+            </div>
+            <nav id="menuMovil" class="menuppal">
+                <ul class="navbar">
+                    <li class="nav mov_txt">
+                        <a href="index.html" class="menuitem ">Inicio</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="blog.html" class="menuitem ">Blog</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
+                    </li>
+                    <li class="nav mov_txt"><a href="serveis.html" class="menuitem">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headOrd">
+            <nav>
+                <ul class="navbar">
+                    <li class="nav txt">
+                        <a href="index.html" class="menuitem ">Inicio</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav txt"><a href="blog.html" class="menuitem ">Blog</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav"><a href="index.html" class="menuitem"><img src="assets/images/Logotipo.png"
+                                alt="wwt"></a></li>
+                    <li class="nav txt"><a href="contacte.html" class="menuitem">Contáctanos</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                    <li class="nav txt"><a href="serveis.html" class="menuitem">Servicios</a>
+                        <img src="assets/images/OrejasGato.png" alt="" class="orejaGatos">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main class="contacte">
         <section class="ImagenEntrada">
@@ -101,6 +128,7 @@
             <img src="assets/images/AA.png" name="AAcertificado" alt="CertificadoAA">
         </div>
     </footer>
+    <script src="assets/js/header.js"></script>
 </body>
 
 </html>

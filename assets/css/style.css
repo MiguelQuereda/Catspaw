@@ -25,6 +25,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+#back{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.headOrd{
+    display: inherit;
+}
+.headMov {
+    display: none;
+}
+
+.headMov nav ul li{
+    background-color: white;
+    border-radius: 0px !important;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid black;
+    padding: 20px;
+}
 
 p, a {
     font-size: 1em;
@@ -74,16 +99,16 @@ header ul .txt img {
 
 }
 
-header ul .txt:hover img {
+header .headOrd ul .txt:hover img {
     Scale: 1;
 
 }
 
-header ul li:hover {
+header .headOrd ul li:hover {
     text-shadow: #000 2px 4px 8px;
 }
 
-header nav ul .txt:hover {
+header .headOrd nav ul .txt:hover {
     border: 0px solid #fff;
 }
 
@@ -91,7 +116,7 @@ header nav ul li a {
     color: #000 !important;
 }
 
-header nav ul li:hover a {
+header .headOrd nav ul li:hover a {
     font-size: 1.3em;
     font-style: italic;
 }

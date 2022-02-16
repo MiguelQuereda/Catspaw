@@ -1,13 +1,38 @@
-
 @media (max-width: 728px) {
+
+    .headMov {
+        display: inline;
+    }
+
+    .hamburger p {
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    
+    .headOrd {
+        display: none;
+    }
+
+    .headMov img {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
 
     /****   GENERALES *****/
     body {
         text-align: center;
     }
+
     body header ul {
         flex-direction: column !important;
     }
+
     main .ImagenEntrada .titulo {
         font-size: 4em;
     }
@@ -70,14 +95,14 @@
     }
 
 
-    
+
 
     .blog .videoArt nav {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         max-width: 100%;
-}
+    }
 
     .blog .videoArt input {
         color: white;
@@ -91,9 +116,11 @@
         border-left: none !important;
         border-top: 2px solid;
     }
-    .sonidos{
+
+    .sonidos {
         flex-direction: column;
     }
+
     .sonidos div button {
         width: 100%;
         margin: 10px 0;
